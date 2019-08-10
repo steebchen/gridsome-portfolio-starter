@@ -1,6 +1,6 @@
 <template>
 	<Layout>
-		<div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
+		<div class="hero container mx-auto flex flex-col sm:flex-row justify-between py-16">
 			<div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
 				<div class="leading-tight">
 					Gridsome Portfolio Starter
@@ -18,14 +18,14 @@
 			</div>
 		</div>
 
-		<div class="container-inner mx-auto mb-16">
+		<div class="container mx-auto mb-16">
 			<p class="text-lg sm:text-xl">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dignissimos dolores ducimus et, eum facere ipsum laboriosam maxime mollitia nemo omnis perferendis perspiciatis quisquam quos, rem, sequi veritatis. Aliquid, eum?
 			</p>
 		</div>
 
 		<div class="overflow-x-hidden">
-			<div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
+			<div class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
 				<h2
 					class="font-bold mb-6"
 					id="projects"
@@ -58,7 +58,7 @@
 		</div>
 
 		<div class="overflow-x-hidden border-gray-200 border-b">
-			<div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
+			<div class="get-to-know-me container mx-auto text-xl pb-16 relative">
 				<h2
 					class="font-bold mb-6"
 					id="about"
@@ -85,7 +85,7 @@
 
 		<div class="overflow-x-hidden">
 			<div class="contact-me bg-background-secondary pt-16">
-				<div class="container-inner mx-auto text-xl pb-4 relative">
+				<div class="container mx-auto text-xl pb-4 relative">
 					<h2
 						class="font-bold mb-6"
 						id="contact"
@@ -186,7 +186,7 @@
 		</div>
 
 		<div class="newsletter bg-background-tertiary">
-			<div class="container-inner mx-auto py-16 pb-8 text-center textl-xl">
+			<div class="container mx-auto py-16 pb-8 text-center textl-xl">
 				<h2 class="text-2xl font-bold mb-8">Join my Newsletter</h2>
 
 				<div class="w-4/5 mx-auto mb-8">
@@ -212,7 +212,7 @@
 				</div>
 			</div>
 
-			<div class="container-inner mx-auto -mt-32 pb-4 overflow-x-hidden">
+			<div class="container mx-auto -mt-32 pb-4 overflow-x-hidden">
 				<svg
 					width="725"
 					height="166"

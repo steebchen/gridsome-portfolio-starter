@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "develop": "gridsome develop",
+    "dev": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {
@@ -14,9 +14,7 @@
     "axios": "^0.19.0",
     "gridsome": "^0.6.7",
     "gridsome-plugin-remark-shiki": "^0.3.0",
-    "lodash.pick": "^4.4.0",
-    "vue-fuse": "^2.1.0",
-    "vue-scrollto": "^2.15.0"
+    "lodash.pick": "^4.4.0"
   },
   "devDependencies": {
     "tailwindcss": "^1.0.6"
