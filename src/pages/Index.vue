@@ -5,13 +5,13 @@
 				<div class="leading-tight">
 					Gridsome Portfolio Starter
 				</div>
-				<div class="text-green-700 leading-tight">
+				<div class="text-primary leading-tight mt-2">
 					This is a description
 				</div>
 			</div>
 			<div class="mt-8 sm:mt-0 max-w-xs">
 				<g-image
-					src="../../static/logo.svg"
+					src="../../static/404.svg"
 					alt="hero"
 					class="mx-auto sm:mx-0"
 				/>
@@ -24,45 +24,13 @@
 			</p>
 		</div>
 
-		<div class="overflow-x-hidden">
-			<div class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
-				<h2
-					class="font-bold mb-6"
-					id="projects"
-				>Here are some projects I've worked on:
-				</h2>
-
-				<div
-					class="absolute right-0"
-					style="top: 50px; transform: translate(100%) rotate(180deg)"
-				>
-					<svg
-						width="170px"
-						height="170px"
-					>
-						<use xlink:href="#dots-triangle"/>
-					</svg>
-				</div>
-
-				<ul class="text-lg sm:text-xl">
-					<li class="checkmark mb-6">
-						<div>Project One</div>
-						<div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
-					</li>
-					<li class="checkmark mb-6">
-						<div>Project Two</div>
-						<div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="overflow-x-hidden border-gray-200 border-b">
-			<div class="get-to-know-me container mx-auto text-xl pb-16 relative">
+		<div class="border-gray-200 border-b">
+			<div class="container mx-auto text-xl pb-16 relative">
 				<h2
 					class="font-bold mb-6"
 					id="about"
-				>Get to know me:
+				>
+					Get to know me:
 				</h2>
 
 				<div
@@ -80,6 +48,17 @@
 				<div class="text-lg sm:text-xl">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae architecto minus molestias iusto ducimus fuga quo quia libero dignissimos, fugiat modi assumenda debitis laboriosam.
 				</div>
+
+				<ul class="text-lg sm:text-xl mt-8">
+					<li class="checkmark mb-6">
+						<div>Project One</div>
+						<div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
+					</li>
+					<li class="checkmark mb-6">
+						<div>Project Two</div>
+						<div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 
@@ -130,7 +109,7 @@
 										name="name"
 										id="name"
 										placeholder="Jon Snow"
-										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
+										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-primary mb-2 p-4"
 										required
 									>
 								</div>
@@ -148,7 +127,7 @@
 										name="email"
 										id="email"
 										placeholder="email@example.com"
-										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
+										class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-primary mb-2 p-4"
 										required
 									>
 								</div>
@@ -166,7 +145,7 @@
 									id="message"
 									rows="5"
 									name="message"
-									class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4"
+									class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-primary mb-2 px-4 py-4"
 									placeholder="Enter your message here."
 									required
 								></textarea>
@@ -176,7 +155,7 @@
 								<input
 									type="submit"
 									value="Submit"
-									class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
+									class="block bg-primary hover:bg-primary-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
 								>
 							</div>
 						</form>
@@ -198,12 +177,12 @@
 								type="email"
 								name="email"
 								placeholder="Your email address"
-								class="flex-1 bg-background-form rounded sm:rounded-r-none px-4 py-4 leading-normal border border-border-color-primary sm:border-r-0 shadow outline-none focus:border-green-700 z-10"
+								class="flex-1 bg-background-form rounded sm:rounded-r-none px-4 py-4 leading-normal border border-border-color-primary sm:border-r-0 shadow outline-none focus:border-primary z-10"
 								required
 							>
 							<button
 								data-element="submit"
-								class="flex-2 w-40 uppercase bg-green-700 text-white rounded sm:rounded-l-none text-lg py-3 px-8 tracking-wide shadow focus:outline-none hover:bg-green-800 focus:bg-green-800 z-10 w-full sm:w-auto mt-4 sm:mt-0"
+								class="flex-2 w-40 uppercase bg-primary text-white rounded sm:rounded-l-none text-lg py-3 px-8 tracking-wide shadow focus:outline-none hover:bg-primary-800 focus:bg-primary-800 z-10 w-full sm:w-auto mt-4 sm:mt-0"
 							>
 								<span>Subscribe</span>
 							</button>
