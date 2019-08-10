@@ -5,6 +5,11 @@
 /*noinspection CssInvalidAtRule*/
 @tailwind utilities;
 
+svg[svg-inline]:not([svg-sprite]) {
+	width: 100%;
+	height: auto;
+}
+
 .theme-light {
 	--bg-background-primary: white;
 	--bg-background-secondary: #f7fafc;
