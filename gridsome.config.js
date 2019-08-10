@@ -30,11 +30,6 @@ module.exports = {
 						create: true,
 					},
 				},
-				remark: {
-					plugins: [
-						['gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true }],
-					],
-				},
 			},
 		},
 		{

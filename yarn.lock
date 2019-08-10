@@ -3514,6 +3514,11 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
+fuse.js@^3.2.0:
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-3.4.5.tgz#8954fb43f9729bd5dbcb8c08f251db552595a7a6"
+  integrity sha512-s9PGTaQIkT69HaeoTVjwGsLfb8V8ScJLx5XGFcKHg0MqLUH/UZ4EKOtqtXX9k7AFqCGxD1aJmYb8Q5VYDibVRQ==
+
 gauge@~2.7.3:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/gauge/-/gauge-2.7.4.tgz#2c03405c7538c39d7eb37b317022e325fb018bf7"
@@ -3743,15 +3748,6 @@ gray-matter@^4.0.2:
     kind-of "^6.0.2"
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
-
-gridsome-plugin-remark-shiki@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-remark-shiki/-/gridsome-plugin-remark-shiki-0.3.0.tgz#36e1a291b4a45ded418aade72ab75092906254b5"
-  integrity sha512-W4RHQQknqIX4jKGhADKPqxxpPOEAqHlWOYmmupCv9bwgtyowWdPzi7OmVqUbOQU9ikcvPMrF07U9VLo74f7MTA==
-  dependencies:
-    shiki "^0.1.2"
-    shiki-languages "^0.1.0"
-    unist-util-visit "^1.4.0"
 
 gridsome@^0.6.7:
   version "0.6.7"
@@ -5051,7 +5047,7 @@ lpad-align@^1.0.1:
     longest "^1.0.0"
     meow "^3.3.0"
 
-lru-cache@^4.0.1, lru-cache@^4.1.1, lru-cache@^4.1.2:
+lru-cache@^4.0.1, lru-cache@^4.1.2:
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.5.tgz#8bbe50ea85bed59bc9e33dcab8235ee9bcf443cd"
   integrity sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==
@@ -5775,13 +5771,6 @@ onetime@^2.0.0:
   integrity sha1-BnQoIw/WdEOyeUsiu6UotoZ5YtQ=
   dependencies:
     mimic-fn "^1.0.0"
-
-onigasm@^2.2.1:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/onigasm/-/onigasm-2.2.2.tgz#0f853152278bf0da5b3d5be728d5218e472d03ca"
-  integrity sha512-TQTMk+RmPYx4sGzNAgV0q7At7PABDNHVqZBlC4aRXHg8hpCdemLOF0qq0gUCjwUbc7mhJMBOo3XpTRYwyr45Gw==
-  dependencies:
-    lru-cache "^4.1.1"
 
 optimist@^0.6.1:
   version "0.6.1"
@@ -7373,30 +7362,6 @@ shebang-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
 
-shiki-languages@^0.1.0, shiki-languages@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/shiki-languages/-/shiki-languages-0.1.4.tgz#f74d0b7fda0e36e04e0740c852147b5db3fdf90a"
-  integrity sha512-hAjiX9YL39AA+ozjo50+20qgt6KWJ/3lcNjmqShtUZYOXakHekon3Rd8Fzq8xSUnA3UFTlwpovAZ2nzFrTFFyA==
-  dependencies:
-    vscode-textmate "https://github.com/octref/vscode-textmate"
-
-shiki-themes@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/shiki-themes/-/shiki-themes-0.1.4.tgz#defb7442f0edd56bc5ce817e0eb64149051b1c91"
-  integrity sha512-4rRmKEyqLW4X1nUF6cGkS+dD4hmLDlNkEUn4dPIlsKv36XUgbEIC/GbR0SGEkcmPT9yuibjotzQw+PVS0Rls/w==
-  dependencies:
-    vscode-textmate "https://github.com/octref/vscode-textmate"
-
-shiki@^0.1.2:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/shiki/-/shiki-0.1.4.tgz#35834b96e651494ac37683152cd30c8754c22e49"
-  integrity sha512-NnBmbSCaKGKQ4PZ4WHjhtTQgDLCw+wJfxxPOPekwAcsFMg5OhPvfIlq8AjbXZJV1D8QwKyNiSPpwLYV5Z8/ewQ==
-  dependencies:
-    onigasm "^2.2.1"
-    shiki-languages "^0.1.4"
-    shiki-themes "^0.1.4"
-    vscode-textmate "https://github.com/octref/vscode-textmate"
-
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
@@ -8565,9 +8530,12 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-"vscode-textmate@https://github.com/octref/vscode-textmate":
-  version "4.0.1"
-  resolved "https://github.com/octref/vscode-textmate#e65aabe2227febda7beaad31dd0fca1228c5ddf3"
+vue-fuse@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/vue-fuse/-/vue-fuse-2.1.0.tgz#a8e785cbb80d216d99cf652f32d3cdad243a15df"
+  integrity sha512-hx4QZkeIATmFlKyq6QSWcFFHPJC0vmsusnZP1GkBSEXh1eH7WV8Pde9O0XFvXWIzCH4Dr+Dox25EKu+iAy4bSg==
+  dependencies:
+    fuse.js "^3.2.0"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.3"

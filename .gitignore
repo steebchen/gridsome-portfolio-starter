@@ -7,3 +7,4 @@ dist
 .env
 .env.*
 schema.graphql
+static/search.json
