@@ -8,54 +8,54 @@ const tailwind = require('tailwindcss')
 const purgecss = require('@fullhuman/postcss-purgecss')
 
 const postcssPlugins = [
-  tailwind(),
+	tailwind(),
 ]
 
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: 'Gridsome Portfolio Starter',
-  siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1.0',
-  siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
-  plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'blog/**/*.md',
-        typeName: 'Post',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            route: 'tag/:id',
-            create: true
-          }
-        },
-        remark: {
-          plugins: [
-            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
-          ]
-        }
-      }
-    },
-    {
-      use: '@gridsome/plugin-sitemap',
-      options: {
-        cacheTime: 600000, // default
-      }
-    },
-  ],
-  transformers: {
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-    }
-  },
-  css: {
-    loaderOptions: {
-      postcss: {
-        plugins: postcssPlugins,
-      },
-    },
-  },
+	siteName: 'Gridsome Portfolio Starter',
+	siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1.0',
+	siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
+	plugins: [
+		{
+			use: '@gridsome/source-filesystem',
+			options: {
+				path: 'blog/**/*.md',
+				typeName: 'Post',
+				refs: {
+					tags: {
+						typeName: 'Tag',
+						route: 'tag/:id',
+						create: true,
+					},
+				},
+				remark: {
+					plugins: [
+						['gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true }],
+					],
+				},
+			},
+		},
+		{
+			use: '@gridsome/plugin-sitemap',
+			options: {
+				cacheTime: 600000, // default
+			},
+		},
+	],
+	transformers: {
+		remark: {
+			externalLinksTarget: '_blank',
+			externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+			anchorClassName: 'icon icon-link',
+		},
+	},
+	css: {
+		loaderOptions: {
+			postcss: {
+				plugins: postcssPlugins,
+			},
+		},
+	},
 }

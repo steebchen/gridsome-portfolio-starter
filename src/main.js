@@ -6,35 +6,35 @@ import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
 
 export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
-  Vue.component('Layout', DefaultLayout)
+	// Set default layout as a global component
+	Vue.component('Layout', DefaultLayout)
 
-  Vue.use(VueScrollTo, {
-    duration: 500,
-    easing: "ease",
-  })
+	Vue.use(VueScrollTo, {
+		duration: 500,
+		easing: 'ease',
+	})
 
-  Vue.use(VueFuse)
+	Vue.use(VueFuse)
 
-  head.meta.push({
-    name: 'keywords',
-    content: 'Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS'
-  })
+	head.meta.push({
+		name: 'keywords',
+		content: 'Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS',
+	})
 
-  head.meta.push({
-    name: 'description',
-    content: 'Gridsome Portfolio Starter'
-  })
+	head.meta.push({
+		name: 'description',
+		content: 'Gridsome Portfolio Starter',
+	})
 
-  head.meta.push({
-    name: 'author',
-    content: 'Andre Madarang'
-  })
+	head.meta.push({
+		name: 'author',
+		content: 'Andre Madarang',
+	})
 
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700'
-  })
+	head.link.push({
+		rel: 'stylesheet',
+		href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700',
+	})
 }
 
 
